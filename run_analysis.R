@@ -45,7 +45,7 @@ test <- cbind(testSubjects, testActivities, test)
 # merge datasets
 combined <- rbind(train, test)
 
-# Convert classLabels to activityName basically. More explicit. 
+# Convert classLabels to activityName 
 combined[["Activity"]] <- factor(combined[, Activity]
                               , levels = activityLabels[["classLabels"]]
                               , labels = activityLabels[["activityName"]])
